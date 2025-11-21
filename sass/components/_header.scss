@@ -1,2 +1,207 @@
 @use '../abstracts' as a;
 
+.banner-bar {
+    display: none;
+}
+
+.top-menu {
+    display: flex;
+    max-width: 1200px;
+    margin: 1.25rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dedede;
+
+    .all-in {
+        display: none;
+    }
+
+    .burger-menu {
+        width: 1.5rem;
+        height: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.4rem;
+        cursor: pointer;
+        margin-right: 0.5rem;
+
+        span:nth-of-type(2) {
+            width: 80%;
+            align-self: flex-end;
+        }
+
+        span {
+            width: 100%;
+            height: 1.5px;
+            border-radius: 10%;
+            background-color: a.$primary-color;
+            transition: all 0.3s ease;
+        }
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+
+        .logo {
+            height: 3rem;
+        }
+
+        a {
+            display: none;
+        }
+    }
+}
+
+.bottom-menu {
+    display: flex;
+    max-width: 1200px;
+    margin: 1.25rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .alumni-link {
+        color: #6f7273;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+    .all-in {
+        height: 1.25rem;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .top-menu {
+        > div {
+            .logo {
+                height: 4rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .banner-bar {
+        display: block;
+        background-color: a.$primary-color;
+        padding: 0.5rem 1rem;
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        ul {
+            display: flex;
+            gap: 1rem;
+            li {
+                a {
+                    color: a.$alt-text-color;
+                    font-weight: 400;
+                    font-size: 0.75rem;
+                    @include a.hover-underline;
+                }
+            }
+
+            li:last-of-type {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .top-menu {
+        padding: 1.5rem 0 1rem 0;
+        margin: 0 auto;
+
+        .burger-menu {
+            display: none;
+        }
+
+        .all-in {
+            display: block;
+            margin-left: auto;
+            height: 2.5rem;
+            cursor: pointer;
+        }
+
+        > div {
+            gap: 1.5rem;
+
+            a {
+                display: block;
+                margin-left: 1rem;
+                color: #6f7273;
+                font-weight: 500;
+                font-size: 1.5rem;
+            }
+
+            .logo {
+                height: 3rem;
+            }
+        }
+    }
+
+    .bottom-menu {
+        margin: 0 auto;
+        padding: 1rem 0;
+
+        .alumni-link,
+        .all-in {
+            display: none;
+        }
+
+        nav {
+            display: block;
+
+            ul {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+
+                li:last-of-type {
+                    background-color: a.$primary-color;
+                    border-radius: 4px;
+                    padding: 0.5rem 1.5rem;
+                    border: 3px solid a.$primary-color;
+
+                    &:hover {
+                        background-color: a.$accent-color;
+                    }
+
+                    a {
+                        color: a.$alt-text-color;
+                        font-weight: 400;
+
+                        &:hover {
+                            color: a.$alt-text-color;
+                        }
+                    }
+                }
+
+                li {
+                    a {
+                        color: #201436;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        @include a.hover-underline;
+                    }
+
+                    a:hover {
+                        color: a.$primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
