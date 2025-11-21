@@ -1,2 +1,32 @@
 @use '../abstracts' as a;
 
+.story-stats-con {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+
+    .story-stat {
+        text-align: center;
+
+        strong {
+            font-size: 3rem;
+            color: a.$primary-color;
+            margin: 0;
+            line-height: 1;
+        }
+
+        p {
+            margin: 0;
+            margin-top: 0.5rem;
+        }
+    }
+
+    hr {
+        height: 75%;
+        color: rgba(#818284, 0.5);
+    }
+}
