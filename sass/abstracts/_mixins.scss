@@ -20,7 +20,7 @@
         transition: width 0.3s ease;
     }
 
-        &:hover {
+    &:hover {
         &::after {
             width: 100%;
         }
