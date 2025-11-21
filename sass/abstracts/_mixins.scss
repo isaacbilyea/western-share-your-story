@@ -1,0 +1,28 @@
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin hover-underline {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: currentColor;
+        transition: width 0.3s ease;
+    }
+
+        &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
