@@ -1,9 +1,8 @@
 @use '../abstracts' as a;
 
 .story-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
 
     .story-card {
         width: 100%;

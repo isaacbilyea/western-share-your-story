@@ -1,1 +1,82 @@
 @use '../abstracts' as a;
+
+.about-initiative-con {
+    .initiative-content {
+        margin-top: 1.5rem;
+
+        .intro-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            color: a.$accent-color;
+        }
+
+        .initiative-details {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .detail-item {
+                h3 {
+                    color: a.$primary-color;
+                    font-size: 1.35rem;
+                    margin-bottom: 0.75rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    line-height: 1.7;
+                    margin-bottom: 1rem;
+                }
+
+                ul {
+                    margin-left: 1.5rem;
+                    margin-top: 0.75rem;
+
+                    li {
+                        list-style: disc;
+                        margin-bottom: 0.75rem;
+                        line-height: 1.6;
+                        padding-left: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-initiative-con {
+        .initiative-content {
+            .intro-text {
+                font-size: 1.15rem;
+            }
+
+            .initiative-details {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+
+                .detail-item {
+                    ul {
+                        margin-left: 1.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-initiative-con {
+        margin: 0 auto;
+
+        .initiative-content {
+            .intro-text {
+                text-align: center;
+                max-width: 900px;
+                margin: 0 auto 3rem;
+            }
+        }
+    }
+}
