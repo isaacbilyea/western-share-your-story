@@ -30,3 +30,37 @@
         color: rgba(#818284, 0.5);
     }
 }
+
+.why-share-con {
+    .why-share-items {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 4rem;
+        width: 100%;
+        align-items: center;
+
+        .why-share-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                height: 4rem;
+            }
+
+            p {
+                width: 60%;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 1.5rem;
+                color: a.$primary-color;
+            }
+        }
+
+        hr {
+            height: 3rem;
+            color: rgba(#818284, 0.5);
+        }
+    }
+}
