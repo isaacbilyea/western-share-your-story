@@ -25,9 +25,10 @@
         }
     }
 
-    hr {
+    .divider {
         height: 75%;
-        color: rgba(#818284, 0.5);
+        width: 1px;
+        background-color: rgba(#818284, 0.5);
     }
 }
 
@@ -58,9 +59,10 @@
             }
         }
 
-        hr {
+        .divider {
             height: 3rem;
-            color: rgba(#818284, 0.5);
+            width: 1px;
+            background-color: rgba(#818284, 0.5);
         }
     }
 }
