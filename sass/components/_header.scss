@@ -51,8 +51,13 @@
             height: 3rem;
         }
 
-        a {
+        a:last-of-type {
             display: none;
+            transition: all 150ms ease;
+
+            &:hover {
+                color: a.$primary-color;
+            }
         }
     }
 }
@@ -149,7 +154,7 @@
         > div {
             gap: 1.5rem;
 
-            a {
+            a:last-of-type {
                 display: block;
                 margin-left: 1rem;
                 color: #6f7273;
