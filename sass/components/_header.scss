@@ -7,7 +7,7 @@
 .top-menu {
     display: flex;
     max-width: 1200px;
-    margin: 1.25rem;
+    margin: 1rem;
     margin-bottom: 0;
     padding-bottom: 1rem;
     align-items: center;
@@ -95,8 +95,7 @@
     .banner-bar {
         display: block;
         background-color: a.$primary-color;
-        padding: 0.5rem 1rem;
-
+        padding: 0.5rem 20px;
         nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -121,8 +120,20 @@
     }
 
     .top-menu {
-        padding: 1.5rem 0 1rem 0;
+        padding: 1.5rem 20px 1rem 20px;
         margin: 0 auto;
+        border-bottom: none;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            right: 20px;
+            height: 1px;
+            background-color: #dedede;
+        }
 
         .burger-menu {
             display: none;
@@ -154,7 +165,7 @@
 
     .bottom-menu {
         margin: 0 auto;
-        padding: 1rem 0;
+        padding: 1rem 20px;
 
         .alumni-link,
         .all-in {

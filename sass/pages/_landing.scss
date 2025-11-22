@@ -1,5 +1,42 @@
 @use '../abstracts' as a;
 
+.hero-con {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    > div {
+        padding: 0;
+    }
+
+    .hero-text {
+        background-color: a.$primary-color;
+        padding: 0;
+        color: a.$alt-text-color;
+        padding: 1rem 1.5rem;
+        margin-top: -0.5rem;
+
+        .hero-heading {
+            margin: 0.5rem 0;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
 .story-stats-con {
     display: flex;
     justify-content: space-between;
@@ -63,6 +100,48 @@
             height: 3rem;
             width: 1px;
             background-color: rgba(#818284, 0.5);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-con {
+        .hero-image {
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-con {
+        position: relative;
+
+        .hero-image {
+            height: 575px;
+        }
+
+        > div {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .hero-text {
+            position: static;
+            max-width: 30rem;
+            background-color: rgba(255, 255, 255, 0.75);
+            color: a.$accent-color;
+            border-bottom: a.$primary-color 3px solid;
+            margin-top: 0;
+            margin-bottom: 3rem;
+
+            p {
+                color: a.$body-text-color;
+            }
         }
     }
 }
