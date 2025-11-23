@@ -39,7 +39,7 @@ a {
 }
 
 section {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .section-heading {
@@ -78,5 +78,9 @@ section {
     html,
     body {
         font-size: 18px;
+    }
+
+    section {
+        padding: 3rem 0;
     }
 }

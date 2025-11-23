@@ -74,15 +74,15 @@
                 <a href="https://www.uwo.ca/"><img src="images/logo.svg" alt="Western University Logo" class="logo"></a>
                 <a href="https://alumni.westernu.ca/">Alumni</a>
             </div>
-            <div class="burger-menu">
+            <button class="burger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
             <img src="images/western-all-in.png" alt="Western University All In" class="all-in">
         </div>
         <div class="bottom-menu col-span-full">
-            <a href="#" class="alumni-link">Alumni</a>
+            <a href="https://alumni.westernu.ca/" class="alumni-link">Alumni</a>
             <img src="images/western-all-in.png" alt="Western University All In" class="all-in">
             <nav>
                 <ul class="menu-nav-links">
@@ -108,19 +108,40 @@
 
     <section class="grid-con">
         <div class="col-span-full story-stats-con">
-            <div class="story-stat">
-                <strong>1,200+</strong>
-                <p>Stories Shared</p>
+            <div class="story-stat-groups">
+                <div class="story-stat-group carousel-item active">
+                    <div class="story-stat">
+                        <strong>1,200+</strong>
+                        <p>Stories Shared</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="story-stat-group carousel-item">
+                    <div class="story-stat">
+                        <strong>73</strong>
+                        <p>Countries Reached</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="story-stat-group carousel-item">
+                    <div class="story-stat">
+                        <strong>15,000+</strong>
+                        <p>Students Inspired</p>
+                    </div>
+                </div>
             </div>
-            <div class="divider"></div>
-            <div class="story-stat">
-                <strong>73</strong>
-                <p>Countries Reached</p>
-            </div>
-            <div class="divider"></div>
-            <div class="story-stat">
-                <strong>15,000+</strong>
-                <p>Students Inspired</p>
+            <div class="carousel-controls" data-carousel="story-stat-groups">
+                <button class="carousel-nav carousel-prev">
+                    <img src="images/scrollbar-arrow-left.svg" alt="Previous" width="24" height="24">
+                </button>
+                <div class="carousel-pagination">
+                    <button class="carousel-dot active"></button>
+                    <button class="carousel-dot"></button>
+                    <button class="carousel-dot"></button>
+                </div>
+                <button class="carousel-nav carousel-next">
+                    <img src="images/scrollbar-arrow-right.svg" alt="Next" width="24" height="24">
+                </button>
             </div>
         </div>
     </section>
@@ -130,7 +151,7 @@
             <div class="col-span-full">
                 <h2 class="section-heading">Featured Stories</h2>
                 <div class="story-cards">
-                    <div class="story-card">
+                    <div class="story-card carousel-item active">
                         <img src="images/destiny-allen-green.png" alt="Destiny Allen-Green" class="story-image">
                         <div class="story-person">
                             <h3>Destiny Allen-Green</h3>
@@ -143,7 +164,7 @@
                         <a href="https://www.ssc.uwo.ca/alumni/alumni-stories/destiny_allen_green.html" target="_blank"
                             class="button">Read More</a>
                     </div>
-                    <div class="story-card">
+                    <div class="story-card carousel-item">
                         <img src="images/griffin-jaegar.png" alt="Griffin Jaegar" class="story-image">
                         <div class="story-person">
                             <h3>Griffin Jaegar</h3>
@@ -156,7 +177,7 @@
                         <a href="https://www.fims.uwo.ca/news/2023/start_your_story_griffin_jaeger.html" target="_blank"
                             class="button">Read More</a>
                     </div>
-                    <div class="story-card">
+                    <div class="story-card carousel-item">
                         <img src="images/andrea-benoit.png" alt="Andrea Benoit" class="story-image">
                         <div class="story-person">
                             <h3>Andrea Benoit</h3>
@@ -170,6 +191,19 @@
                             target="_blank" class="button">Read More</a>
                     </div>
                 </div>
+                <div class="carousel-controls" data-carousel="story-cards">
+                    <button class="carousel-nav carousel-prev">
+                        <img src="images/scrollbar-arrow-left.svg" alt="Previous" width="24" height="24">
+                    </button>
+                    <div class="carousel-pagination">
+                        <button class="carousel-dot active"></button>
+                        <button class="carousel-dot"></button>
+                        <button class="carousel-dot"></button>
+                    </div>
+                    <button class="carousel-nav carousel-next">
+                        <img src="images/scrollbar-arrow-right.svg" alt="Next" width="24" height="24">
+                    </button>
+                </div>
             </div>
         </section>
     </div>
@@ -178,25 +212,47 @@
         <div class="col-span-full why-share-con">
             <h2 class="section-heading">Why Share?</h2>
             <div class="why-share-items">
-                <div class="why-share-item">
-                    <img src="images/inspire.svg" alt="Light Bulb Icon">
-                    <p>Inspire Future Students</p>
+                <div class="why-share-item-group carousel-item active">
+                    <div class="why-share-item">
+                        <img src="images/inspire.svg" alt="Light Bulb Icon">
+                        <p>Inspire Future Students</p>
+                    </div>
                 </div>
                 <div class="divider"></div>
-                <div class="why-share-item">
-                    <img src="images/reconnect.svg" alt="Person Reconnecting Icon">
-                    <p>Reconnect With Community</p>
+                <div class="why-share-item-group carousel-item">
+                    <div class="why-share-item">
+                        <img src="images/reconnect.svg" alt="Person Reconnecting Icon">
+                        <p>Reconnect With Community</p>
+                    </div>
                 </div>
                 <div class="divider"></div>
-                <div class="why-share-item">
-                    <img src="images/legacy.svg" alt="Notepad Icon">
-                    <p>Build Western's Legacy</p>
+                <div class="why-share-item-group carousel-item">
+                    <div class="why-share-item">
+                        <img src="images/legacy.svg" alt="Notepad Icon">
+                        <p>Build Western's Legacy</p>
+                    </div>
                 </div>
                 <div class="divider"></div>
-                <div class="why-share-item">
-                    <img src="images/featured.svg" alt="Star Icon">
-                    <p>Get Featured</p>
+                <div class="why-share-item-group carousel-item">
+                    <div class="why-share-item">
+                        <img src="images/featured.svg" alt="Star Icon">
+                        <p>Get Featured</p>
+                    </div>
                 </div>
+            </div>
+            <div class="carousel-controls" data-carousel="why-share-items">
+                <button class="carousel-nav carousel-prev">
+                    <img src="images/scrollbar-arrow-left.svg" alt="Previous" width="24" height="24">
+                </button>
+                <div class="carousel-pagination">
+                    <button class="carousel-dot active"></button>
+                    <button class="carousel-dot"></button>
+                    <button class="carousel-dot"></button>
+                    <button class="carousel-dot"></button>
+                </div>
+                <button class="carousel-nav carousel-next">
+                    <img src="images/scrollbar-arrow-right.svg" alt="Next" width="24" height="24">
+                </button>
             </div>
         </div>
     </section>

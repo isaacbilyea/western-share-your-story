@@ -1,0 +1,85 @@
+@use '../abstracts' as a;
+
+@media screen and (max-width: 767px) {
+    .story-stat-groups,
+    .why-share-items,
+    .story-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.4s ease;
+
+        .carousel-item {
+            flex: 0 0 100%;
+            min-width: 100%;
+        }
+
+        .divider {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .story-stat-groups,
+    .why-share-items,
+    .story-cards {
+        .carousel-item:first-child,
+        .carousel-item:last-child {
+            display: none;
+        }
+    }
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+
+    .carousel-nav {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 1rem;
+            height: 1rem;
+            display: block;
+        }
+    }
+
+    .carousel-pagination {
+        display: flex;
+        gap: 1rem;
+
+        .carousel-dot {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: #dedede;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            transition: background-color 0.3s ease;
+
+            &.active {
+                background-color: a.$body-text-color;
+            }
+
+            &:hover:not(.active) {
+                background-color: #bbb;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-controls {
+        display: none;
+    }
+}
