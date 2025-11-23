@@ -1,10 +1,13 @@
 import { mobileMenu } from './modules/mobile-menu.js';
 import { footerAccordion } from './modules/footer-accordion.js';
-import { carousel } from './modules/carousel.js';
+import { carouselSlider } from './modules/carousel-slider.js';
+import { formAlerts } from './modules/form-alerts.js';
+import { gsap } from './modules/gsap.js';
 
 mobileMenu();
 footerAccordion();
-
-carousel('.story-stat-groups');
-carousel('.story-cards');
-carousel('.why-share-items');
+carouselSlider('.story-stat-groups');
+carouselSlider('.story-cards');
+carouselSlider('.why-share-items');
+formAlerts();
+gsap();

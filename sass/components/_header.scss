@@ -192,7 +192,6 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #dedede;
-
     .all-in {
         display: none;
     }
@@ -363,7 +362,7 @@
                 gap: 2rem;
                 align-items: center;
 
-                li:not(:last-of-type) {
+                li {
                     a {
                         color: #201436;
                         font-weight: 600;
@@ -379,36 +378,39 @@
                 }
 
                 li:last-of-type {
-                    background-color: a.$primary-color;
-                    border-radius: 4px;
-                    padding: 0.5rem 1.5rem;
-                    border: 3px solid a.$primary-color;
-
-                    &:hover {
-                        background-color: a.$accent-color;
-                    }
-
                     a {
+                        background-color: a.$primary-color;
+                        border-radius: 4px;
+                        padding: 0.5rem 1.5rem;
+                        border: 2px solid a.$primary-color;
+                        cursor: pointer;
                         color: a.$alt-text-color;
                         font-weight: 400;
                         text-decoration: none;
                         position: relative;
                         display: inline-block;
 
+                        &:hover {
+                            background-color: a.$accent-color;
+                            border: 2px solid a.$secondary-color;
+                        }
+
                         &::after {
                             content: '';
                             position: absolute;
-                            bottom: 1px;
-                            left: 0;
+                            bottom: 7px;
+                            left: 7.5%;
                             width: 0;
                             height: 1px;
-                            background-color: a.$alt-text-color;
+                            background-color: a.$secondary-color;
                             transition: width 0.45s ease;
                         }
-                    }
 
-                    &:hover a::after {
-                        width: 100%;
+                        &:hover {
+                            &::after {
+                                width: 85%;
+                            }
+                        }
                     }
                 }
             }

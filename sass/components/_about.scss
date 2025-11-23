@@ -1,81 +1,115 @@
 @use '../abstracts' as a;
 
-.about-initiative-con {
-    .initiative-content {
-        margin-top: 1.5rem;
+.initiative-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
 
-        .intro-text {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            margin-bottom: 2rem;
-            color: a.$accent-color;
-        }
+    .initiative-card {
+        .initiative-text {
+            padding: 1.75rem;
+            margin-top: -0.5rem;
+            border-bottom: 2px solid a.$primary-color;
+            background-color: #eee;
 
-        .initiative-details {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
+            h3 {
+                margin: 0;
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+                font-weight: 600;
+            }
 
-            .detail-item {
-                h3 {
-                    color: a.$primary-color;
-                    font-size: 1.35rem;
-                    margin-bottom: 0.75rem;
-                    font-weight: 600;
-                }
+            p {
+                margin: 0;
+                margin-bottom: 0.25rem;
+            }
 
-                p {
-                    line-height: 1.7;
-                    margin-bottom: 1rem;
-                }
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                margin-top: 1rem;
+                margin-bottom: 0.25rem;
 
-                ul {
-                    margin-left: 1.5rem;
-                    margin-top: 0.75rem;
-
-                    li {
-                        list-style: disc;
-                        margin-bottom: 0.75rem;
-                        line-height: 1.6;
-                        padding-left: 0.5rem;
+                li {
+                    &::before {
+                        content: '•';
+                        display: inline-block;
+                        width: 1rem;
                     }
                 }
             }
+        }
+
+        .initiative-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-height: 30rem;
         }
     }
 }
 
 @media screen and (min-width: 768px) {
-    .about-initiative-con {
-        .initiative-content {
-            .intro-text {
-                font-size: 1.15rem;
+    .initiative-cards {
+        .initiative-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .initiative-text {
+                z-index: 10;
+                margin-left: -10rem;
+                width: calc(50% + 10rem);
             }
 
-            .initiative-details {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 3rem;
+            &:last-of-type {
+                flex-direction: row-reverse;
 
-                .detail-item {
-                    ul {
-                        margin-left: 1.75rem;
-                    }
+                .initiative-text {
+                    margin-left: 0;
+                    margin-right: -10rem;
+                    width: calc(50% + 10rem);
                 }
+            }
+
+            .initiative-image {
+                width: calc(50% + 10rem);
+                max-height: 30rem;
+                height: 100%;
+                margin-bottom: 0.5rem;
             }
         }
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .about-initiative-con {
-        margin: 0 auto;
+@media screen and (min-width: 1000px) {
+    .initiative-cards {
+        .initiative-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .initiative-text {
+                z-index: 10;
+                margin-left: -4rem;
+                width: calc(50% + 4rem);
+            }
 
-        .initiative-content {
-            .intro-text {
-                text-align: center;
-                max-width: 900px;
-                margin: 0 auto 3rem;
+            &:last-of-type {
+                flex-direction: row-reverse;
+
+                .initiative-text {
+                    margin-left: 0;
+                    margin-right: -4rem;
+                    width: calc(50% + 4rem);
+                }
+            }
+
+            .initiative-image {
+                width: calc(50% + 2rem);
+                max-height: 22.5rem;
+                height: 100%;
+                margin-bottom: 0.5rem;
             }
         }
     }

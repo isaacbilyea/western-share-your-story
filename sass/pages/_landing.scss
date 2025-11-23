@@ -35,8 +35,6 @@
 }
 
 .story-stats-con {
-    padding: 2rem 0;
-
     .story-stat-groups {
         position: relative;
 
@@ -131,7 +129,7 @@
 
         > div {
             position: absolute;
-            bottom: 0;
+            bottom: 10%;
             left: 0;
             right: 0;
             max-width: 1200px;
@@ -145,7 +143,8 @@
             color: a.$accent-color;
             border-bottom: a.$primary-color 3px solid;
             margin-top: 0;
-            margin-bottom: 3rem;
+            padding: 0.5rem 1.5rem;
+            backdrop-filter: blur(7.5px);
 
             p {
                 color: a.$body-text-color;

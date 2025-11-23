@@ -9,6 +9,9 @@
     <link href="images/apple-icon.png" rel="apple-touch-icon" />
     <link href="images/favicon.ico" rel="shortcut icon" />
     <link href="css/main.css?=v06082025" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
     <script type="module" src="js/landing.js?=v06082025"></script>
     <title>Share Your Story - Western University</title>
 </head>
@@ -33,8 +36,8 @@
         <nav class="mobile-main-nav">
             <ul>
                 <li><a href="#featured-stories">FEATURED STORIES</a></li>
-                <li><a href="#why-share">WHY SHARE?</a></li>
                 <li><a href="#about">ABOUT</a></li>
+                <li><a href="#why-share">WHY SHARE?</a></li>
                 <li><a href="#share-form">SHARE YOUR STORY</a></li>
             </ul>
         </nav>
@@ -87,8 +90,8 @@
             <nav>
                 <ul class="menu-nav-links">
                     <li><a href="#featured-stories">FEATURED STORIES</a></li>
-                    <li><a href="#why-share">WHY SHARE?</a></li>
                     <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#why-share">WHY SHARE?</a></li>
                     <li><a href="#share-form">Share Your Story</a></li>
                 </ul>
             </nav>
@@ -208,87 +211,84 @@
         </section>
     </div>
 
-    <section class="grid-con" id="why-share">
-        <div class="col-span-full why-share-con">
-            <h2 class="section-heading">Why Share?</h2>
-            <div class="why-share-items">
-                <div class="why-share-item-group carousel-item active">
-                    <div class="why-share-item">
-                        <img src="images/inspire.svg" alt="Light Bulb Icon">
-                        <p>Inspire Future Students</p>
+    <section class="grid-con" id="about">
+        <div class="col-span-full about-initiative-con">
+            <h2 class="section-heading">About This Initiative</h2>
+            <div class="initiative-cards">
+                <div class="initiative-card">
+                    <img src="images/share-your-story.png" alt="Dr. John Yoo giving opening remarks"
+                        class="initiative-image">
+                    <div class=" initiative-text">
+                        <h3>Share Your Story</h3>
+                        <p>Western University is launching the "Share Your Story" initiative to celebrate the diverse
+                            journeys, achievements, and lived experiences of our alumni community. Your story
+                            matters—and it
+                            has the power to inspire current students and fellow graduates alike.</p>
                     </div>
                 </div>
-                <div class="divider"></div>
-                <div class="why-share-item-group carousel-item">
-                    <div class="why-share-item">
-                        <img src="images/reconnect.svg" alt="Person Reconnecting Icon">
-                        <p>Reconnect With Community</p>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="why-share-item-group carousel-item">
-                    <div class="why-share-item">
-                        <img src="images/legacy.svg" alt="Notepad Icon">
-                        <p>Build Western's Legacy</p>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="why-share-item-group carousel-item">
-                    <div class="why-share-item">
-                        <img src="images/featured.svg" alt="Star Icon">
-                        <p>Get Featured</p>
+                <div class="initiative-card">
+                    <img src="images/what-to-share.png" alt="Alumni with JW" class="initiative-image">
+                    <div class=" initiative-text">
+                        <h3>What To Share</h3>
+                        <ul>
+                            <li>The mentors who shaped your journey</li>
+                            <li>Challenges you overcame during and after university</li>
+                            <li>Personal milestones and professional accomplishments</li>
+                            <li>How Western contributed to your growth beyond the classroom</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="carousel-controls" data-carousel="why-share-items">
-                <button class="carousel-nav carousel-prev">
-                    <img src="images/scrollbar-arrow-left.svg" alt="Previous" width="24" height="24">
-                </button>
-                <div class="carousel-pagination">
-                    <button class="carousel-dot active"></button>
-                    <button class="carousel-dot"></button>
-                    <button class="carousel-dot"></button>
-                    <button class="carousel-dot"></button>
-                </div>
-                <button class="carousel-nav carousel-next">
-                    <img src="images/scrollbar-arrow-right.svg" alt="Next" width="24" height="24">
-                </button>
-            </div>
+        </div>
         </div>
     </section>
 
     <div class="background-wrapper">
-        <section class="grid-con" id="about">
-            <div class="col-span-full about-initiative-con">
-                <h2 class="section-heading">About This Initiative</h2>
-                <div class="initiative-content">
-                    <p class="intro-text">Western University is launching the "Share Your Story" initiative to celebrate
-                        the
-                        diverse journeys, achievements, and lived experiences of our alumni community. Your story
-                        matters—and it has the power to inspire current students and fellow graduates alike.</p>
-
-                    <div class="initiative-details">
-                        <div class="detail-item">
-                            <h3>What We're Looking For</h3>
-                            <p>Alumni are invited to reflect on their time at Western and share:</p>
-                            <ul>
-                                <li>The mentors who shaped your journey</li>
-                                <li>Challenges you overcame during and after university</li>
-                                <li>Personal milestones and professional accomplishments</li>
-                                <li>How Western contributed to your growth beyond the classroom</li>
-                            </ul>
-                        </div>
-
-                        <div class="detail-item">
-                            <h3>Your Impact</h3>
-                            <p>Selected stories will be featured across Western's digital platforms, helping to build a
-                                richer, more connected alumni network. By sharing your journey, you contribute to a
-                                legacy
-                                of Purple-and-White pride and remind the next generation that every successful path
-                                begins
-                                with a single step—and a supportive community behind it.</p>
+        <section class="grid-con" id="why-share">
+            <div class="col-span-full why-share-con">
+                <h2 class="section-heading">Why Share?</h2>
+                <div class="why-share-items">
+                    <div class="why-share-item-group carousel-item active">
+                        <div class="why-share-item">
+                            <img src="images/inspire.svg" alt="Light Bulb Icon">
+                            <p>Inspire Future Students</p>
                         </div>
                     </div>
+                    <div class="divider"></div>
+                    <div class="why-share-item-group carousel-item">
+                        <div class="why-share-item">
+                            <img src="images/reconnect.svg" alt="Person Reconnecting Icon">
+                            <p>Reconnect With Community</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="why-share-item-group carousel-item">
+                        <div class="why-share-item">
+                            <img src="images/legacy.svg" alt="Notepad Icon">
+                            <p>Build Western's Legacy</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="why-share-item-group carousel-item">
+                        <div class="why-share-item">
+                            <img src="images/featured.svg" alt="Star Icon">
+                            <p>Get Featured</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls" data-carousel="why-share-items">
+                    <button class="carousel-nav carousel-prev">
+                        <img src="images/scrollbar-arrow-left.svg" alt="Previous" width="24" height="24">
+                    </button>
+                    <div class="carousel-pagination">
+                        <button class="carousel-dot active"></button>
+                        <button class="carousel-dot"></button>
+                        <button class="carousel-dot"></button>
+                        <button class="carousel-dot"></button>
+                    </div>
+                    <button class="carousel-nav carousel-next">
+                        <img src="images/scrollbar-arrow-right.svg" alt="Next" width="24" height="24">
+                    </button>
                 </div>
             </div>
         </section>
@@ -296,9 +296,8 @@
 
     <section class="grid-con" id="share-form">
         <div class="col-span-full contact-form-con">
-            <h2 class="section-heading">Ready to Share?</h2>
-            <p class="form-intro">Tell us about your journey and inspire the next generation of Western students.</p>
-            <form class="contact-form">
+            <h2 class="section-heading">Share Your Story</h2>
+            <form class="contact-form" novalidate>
                 <div class="form-group">
                     <label for="first-name">First Name*</label>
                     <input type="text" id="first-name" name="first-name" required>
