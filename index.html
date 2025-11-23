@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#561b8d" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#561b8d" media="(prefers-color-scheme: dark)" />
+    <link href="images/apple-icon.png" rel="apple-touch-icon" />
+    <link href="images/favicon.ico" rel="shortcut icon" />
     <link href="css/main.css?=v06082025" rel="stylesheet">
     <script type="module" src="js/landing.js?=v06082025"></script>
     <title>Share Your Story - Western University</title>
@@ -11,6 +15,45 @@
 
 <body>
     <h1 class="hidden">Share Your Story</h1>
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+            <a href="https://www.uwo.ca/">
+                <img src="images/logo.svg" alt="Western University Logo" class="logo">
+            </a>
+            <button class="close-menu" aria-label="Close Menu">
+                <img src="images/close.svg" alt="Close" width="24" height="24">
+            </button>
+        </div>
+
+        <div class="mobile-menu-bottom">
+            <a href="https://alumni.westernu.ca/" class="alumni-link">Alumni</a>
+            <img src="images/western-all-in.png" alt="Western University All In" class="all-in">
+        </div>
+
+        <nav class="mobile-main-nav">
+            <ul>
+                <li><a href="#featured-stories">FEATURED STORIES</a></li>
+                <li><a href="#why-share">WHY SHARE?</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#share-form">SHARE YOUR STORY</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-info-section">
+            <p class="info-heading">Information For:</p>
+            <div class="info-links-scroll">
+                <ul>
+                    <li><a href="https://www.registrar.uwo.ca/services/transcripts.html" target="_blank">Academic
+                            Records</a></li>
+                    <li><a href="https://alumni.westernu.ca/perks-benefits/email-for-life/" target="_blank">Email for
+                            Life</a></li>
+                    <li><a href="https://www.giving.westernu.ca/" target="_blank">Give</a></li>
+                    <li><a href="https://magazine.westernu.ca/" target="_blank">Magazine</a></li>
+                    <li><a href="https://alumni.westernu.ca/contact/" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <header id="header-con">
         <div class="banner-bar">
             <nav>
@@ -28,9 +71,8 @@
         </div>
         <div class="top-menu col-span-full">
             <div>
-                <a href="https://www.uwo.ca/" target="_blank"><img src="images/logo.svg" alt="Western University Logo"
-                        class="logo"></a>
-                <a href="#">Alumni</a>
+                <a href="https://www.uwo.ca/"><img src="images/logo.svg" alt="Western University Logo" class="logo"></a>
+                <a href="https://alumni.westernu.ca/">Alumni</a>
             </div>
             <div class="burger-menu">
                 <span></span>
@@ -252,16 +294,22 @@
             <div class="grid-con">
                 <div class="col-span-full footer-links">
                     <nav class="link-column" aria-label="Alumni Services">
-                        <h3>Alumni Services</h3>
+                        <button class="footer-toggle">
+                            <h3>Alumni Services</h3>
+                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24">
+                        </button>
                         <ul>
-                            <li><a href="https://westernu.alumni-perks.com/" target="_blank">Purple Perks</a></li>
+                            <li><a href="https://westernu.alumni-perks.com/" target="_blank">Purple Perks App</a></li>
                             <li><a href="https://alumni.westernu.ca/form/alumni-card-request-form/">Alumni Card</a></li>
                             <li><a href="https://alumni.westernu.ca/perks-benefits/email-for-life/">Email for Life</a>
                             </li>
                         </ul>
                     </nav>
                     <nav class="link-column" aria-label="Campus">
-                        <h3>Campus</h3>
+                        <button class="footer-toggle">
+                            <h3>Campus</h3>
+                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24">
+                        </button>
                         <ul>
                             <li><a href="https://www.uwo.ca/about/visit/maps.html">Maps</a></li>
                             <li><a href="https://www.uwo.ca/about/visit/buildings.html">Building Directory</a></li>
@@ -269,7 +317,10 @@
                         </ul>
                     </nav>
                     <nav class="link-column" aria-label="Community">
-                        <h3>Community</h3>
+                        <button class="footer-toggle">
+                            <h3>Community</h3>
+                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24">
+                        </button>
                         <ul>
                             <li><a href="https://alumni.westernu.ca/community/class-notes/">Class Notes</a></li>
                             <li><a href="https://alumni.westernu.ca/community/alumni-news/">News</a></li>

@@ -71,32 +71,85 @@ footer {
         padding: 2rem 0;
 
         .footer-links {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-
-            .land-acknowledgement {
-                border: a.$background-color 1px solid;
-                padding: 1rem;
-
-                h3 {
-                    margin: 0;
-                }
-            }
+            display: flex;
+            flex-direction: column;
+            gap: 0;
 
             .link-column {
-                h3 {
+                position: relative;
+
+                .footer-toggle {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1.25rem 1rem;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    text-align: left;
                     border-bottom: 1px solid #fff;
-                    padding-bottom: 1rem;
+                    margin-bottom: 1rem;
+
+                    h3 {
+                        color: a.$alt-text-color;
+                        margin: 0;
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                    }
+
+                    .chevron {
+                        transition: transform 200ms ease;
+                        width: 1rem;
+                    }
+
+                    &.active {
+                        .chevron {
+                            transform: rotate(-180deg);
+                        }
+                    }
                 }
 
-                ul li a {
+                ul {
+                    max-height: 0;
+                    overflow: hidden;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    transition: max-height 0.3s ease-in-out,
+                        padding 0.3s ease-in-out;
+
+                    &.active {
+                        max-height: 300px;
+                        padding-bottom: 1.25rem;
+                    }
+                }
+
+                li {
+                    margin-bottom: 0.75rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                a {
+                    display: block;
+                    color: a.$alt-text-color;
+                    text-decoration: none;
+                    font-size: 0.95rem;
+                    width: fit-content;
                     @include a.hover-underline;
                 }
             }
 
-            .link-column,
             .land-acknowledgement {
+                border: a.$background-color 1px solid;
+                padding: 1rem;
+                margin-top: 2rem;
+
                 h3 {
                     color: a.$alt-text-color;
                     margin: 0;
@@ -107,28 +160,11 @@ footer {
                     a {
                         color: a.$alt-text-color;
                         text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
-                }
-
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    margin-top: 1rem;
-                }
-
-                li {
-                    margin-bottom: 0.5rem;
-                }
-
-                a {
-                    display: block;
-                    color: a.$alt-text-color;
-                    text-decoration: none;
-                    font-size: 0.95rem;
-                    width: fit-content;
                 }
 
                 p {
@@ -164,7 +200,7 @@ footer {
             flex-direction: column;
             align-items: center;
             gap: 1rem;
-            margin-top: 1.25rem;
+            margin-top: 1rem;
 
             .footer-logo {
                 img {
@@ -205,14 +241,19 @@ footer {
         .footer-top {
             padding: 2.5rem 0;
         }
+        .footer-bottom {
+            .footer-legal {
+                .legal-links {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 0.25rem;
 
-        .footer-middle {
-            .footer-links {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2.5rem;
-
-                .land-acknowledgement {
-                    grid-column: span 2;
+                    span {
+                        display: inline;
+                        color: a.$alt-text-color;
+                        font-size: 0.85rem;
+                    }
                 }
             }
         }
@@ -245,36 +286,40 @@ footer {
             padding: 3rem 0;
 
             .footer-links {
-                display: flex;
+                flex-direction: row;
                 gap: 3rem;
 
                 .link-column {
-                    width: 50%;
+                    width: 11rem;
+                    .footer-toggle {
+                        pointer-events: none;
+                        padding: 0;
+                        padding-bottom: 1rem;
+                        position: relative;
+                        margin: 0;
+
+                        .chevron {
+                            display: none;
+                        }
+                    }
+
+                    ul {
+                        max-height: none;
+                        padding-top: 1rem;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
                 }
 
                 .land-acknowledgement {
-                    grid-column: span 1;
+                    flex: 1;
+                    margin-top: 0;
                 }
             }
         }
 
         .footer-bottom {
             padding: 2rem 0;
-
-            .footer-legal {
-                .legal-links {
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    gap: 0.25rem;
-
-                    span {
-                        display: inline;
-                        color: a.$alt-text-color;
-                        font-size: 0.85rem;
-                    }
-                }
-            }
         }
     }
 }
