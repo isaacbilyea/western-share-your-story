@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#561b8d" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#561b8d" media="(prefers-color-scheme: dark)" />
-    <link href="images/apple-icon.png" rel="apple-touch-icon" />
-    <link href="images/favicon.ico" rel="shortcut icon" />
+    <meta name="theme-color" content="#561b8d" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#561b8d" media="(prefers-color-scheme: dark)">
+    <link href="images/apple-icon.png" rel="apple-touch-icon">
+    <link href="images/favicon.ico" rel="shortcut icon">
     <link href="css/main.css?=v06082025" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
@@ -17,23 +17,22 @@
 </head>
 
 <body>
-    <h1 class="hidden">Share Your Story</h1>
-    <div class="mobile-menu-overlay">
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
         <div class="mobile-menu-header">
             <a href="https://www.uwo.ca/">
                 <img src="images/logo.svg" alt="Western University Logo" class="logo">
             </a>
-            <button class="close-menu" aria-label="Close Menu">
-                <img src="images/close.svg" alt="Close" width="24" height="24">
+            <button class="close-menu" type="button" aria-label="Close menu">
+                <img src="images/close.svg" alt="" width="24" height="24">
             </button>
         </div>
 
         <div class="mobile-menu-bottom">
             <a href="https://alumni.westernu.ca/" class="alumni-link">Alumni</a>
-            <img src="images/western-all-in.png" alt="Western University All In" class="all-in">
+            <img src="images/western-all-in.png" alt="Western University All In" class="all-in" aria-hidden="true">
         </div>
 
-        <nav class="mobile-main-nav">
+        <nav class="mobile-main-nav" aria-label="Mobile site navigation">
             <ul>
                 <li><a href="#featured-stories">FEATURED STORIES</a></li>
                 <li><a href="#about">ABOUT</a></li>
@@ -46,28 +45,40 @@
             <p class="info-heading">Information For:</p>
             <div class="info-links-scroll">
                 <ul>
-                    <li><a href="https://www.registrar.uwo.ca/services/transcripts.html" target="_blank">Academic
+                    <li><a href="https://www.registrar.uwo.ca/services/transcripts.html" target="_blank"
+                            rel="noopener noreferrer">Academic
                             Records</a></li>
-                    <li><a href="https://alumni.westernu.ca/perks-benefits/email-for-life/" target="_blank">Email for
+                    <li><a href="https://alumni.westernu.ca/perks-benefits/email-for-life/" target="_blank"
+                            rel="noopener noreferrer">Email for
                             Life</a></li>
-                    <li><a href="https://www.giving.westernu.ca/" target="_blank">Give</a></li>
-                    <li><a href="https://magazine.westernu.ca/" target="_blank">Magazine</a></li>
-                    <li><a href="https://alumni.westernu.ca/contact/" target="_blank">Contact Us</a></li>
+                    <li><a href="https://www.giving.westernu.ca/" target="_blank" rel="noopener noreferrer">Give</a>
+                    </li>
+                    <li><a href="https://magazine.westernu.ca/" target="_blank" rel="noopener noreferrer">Magazine</a>
+                    </li>
+                    <li><a href="https://alumni.westernu.ca/contact/" target="_blank" rel="noopener noreferrer">Contact
+                            Us</a></li>
                 </ul>
             </div>
         </div>
     </div>
+
     <header id="header-con">
+        <h1 class="hidden" id="site-heading">Share Your Story</h1>
         <div class="banner-bar">
-            <nav>
+            <nav aria-label="Utility navigation">
                 <ul class="banner-nav-links">
-                    <li><a href="https://www.registrar.uwo.ca/services/transcripts.html" target="_blank">Academic
+                    <li><a href="https://www.registrar.uwo.ca/services/transcripts.html" target="_blank"
+                            rel="noopener noreferrer">Academic
                             Records</a></li>
-                    <li><a href="https://alumni.westernu.ca/perks-benefits/email-for-life/" target="_blank">Email for
+                    <li><a href="https://alumni.westernu.ca/perks-benefits/email-for-life/" target="_blank"
+                            rel="noopener noreferrer">Email for
                             Life</a></li>
-                    <li><a href="https://www.giving.westernu.ca/" target="_blank">Give</a></li>
-                    <li><a href="https://magazine.westernu.ca/" target="_blank">Magazine</a></li>
-                    <li><a href="https://alumni.westernu.ca/contact/" target="_blank">Contact Us</a></li>
+                    <li><a href="https://www.giving.westernu.ca/" target="_blank" rel="noopener noreferrer">Give</a>
+                    </li>
+                    <li><a href="https://magazine.westernu.ca/" target="_blank" rel="noopener noreferrer">Magazine</a>
+                    </li>
+                    <li><a href="https://alumni.westernu.ca/contact/" target="_blank" rel="noopener noreferrer">Contact
+                            Us</a></li>
                     <li><a href="#">Popular Links</a></li>
                 </ul>
             </nav>
@@ -77,17 +88,17 @@
                 <a href="https://www.uwo.ca/"><img src="images/logo.svg" alt="Western University Logo" class="logo"></a>
                 <a href="https://alumni.westernu.ca/">Alumni</a>
             </div>
-            <button class="burger-menu">
+            <button class="burger-menu" type="button" aria-label="Open menu" aria-controls="mobile-menu-overlay">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <img src="images/western-all-in.png" alt="Western University All In" class="all-in">
+            <img src="images/western-all-in.png" alt="Western University All In" class="all-in" aria-hidden="true">
         </div>
         <div class="bottom-menu col-span-full">
             <a href="https://alumni.westernu.ca/" class="alumni-link">Alumni</a>
-            <img src="images/western-all-in.png" alt="Western University All In" class="all-in">
-            <nav>
+            <img src="images/western-all-in.png" alt="Western University All In" class="all-in" aria-hidden="true">
+            <nav aria-label="Primary site navigation">
                 <ul class="menu-nav-links">
                     <li><a href="#featured-stories">FEATURED STORIES</a></li>
                     <li><a href="#about">ABOUT</a></li>
@@ -98,224 +109,270 @@
         </div>
     </header>
 
-    <section class="hero-con">
-        <img src="images/share-your-story-hero.png" alt="Alumni talking to eachother" class="hero-image">
-        <div class="grid-con">
-            <div class="hero-text col-span-full">
-                <h2 class="hero-heading">Share Your Story</h2>
-                <p class="hero-subheading">Your journey at Western has the power to inspire. Whether you've traveled the
-                    world, launched a career, or returned home, share your story with our community.</p>
+    <main id="main-content">
+        <section class="hero-con" aria-labelledby="hero-heading">
+            <h2 id="hero-heading" class="hidden">Hero section</h2>
+            <img srcset="images/share-your-story-hero-300w.jpg 300w, images/share-your-story-hero-600w.jpg 600w, images/share-your-story-hero-1200w.jpg 1200w, images/share-your-story-hero-1600w.jpg 1600w, images/share-your-story-hero-2000w.jpg 2000w"
+                sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (min-width: 1601px) 2000px"
+                src="images/share-your-story-hero.jpg" alt="Alumni talking to eachother" class="hero-image">
+            <div class="grid-con">
+                <div class="hero-text col-span-full">
+                    <h3 class="hero-heading">Share Your Story</h3>
+                    <p class="hero-subheading">Your journey at Western has the power to inspire. Whether you've traveled
+                        the world, launched a career, or returned home, share your story with our community.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="grid-con">
-        <div class="col-span-full story-stats-con">
-            <div class="story-stat-groups">
-                <div class="story-stat-group carousel-item active">
-                    <div class="story-stat">
-                        <strong>1,200+</strong>
-                        <p>Stories Shared</p>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="story-stat-group carousel-item">
-                    <div class="story-stat">
-                        <strong>73</strong>
-                        <p>Countries Reached</p>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="story-stat-group carousel-item">
-                    <div class="story-stat">
-                        <strong>15,000+</strong>
-                        <p>Students Inspired</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-controls" data-carousel="story-stat-groups">
-                <button class="carousel-nav carousel-prev">
-                    <img src="images/scrollbar-arrow-left.svg" alt="Previous" width="24" height="24">
-                </button>
-                <div class="carousel-pagination">
-                    <button class="carousel-dot active"></button>
-                    <button class="carousel-dot"></button>
-                    <button class="carousel-dot"></button>
-                </div>
-                <button class="carousel-nav carousel-next">
-                    <img src="images/scrollbar-arrow-right.svg" alt="Next" width="24" height="24">
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <div class="background-wrapper">
-        <section class="grid-con" id="featured-stories">
-            <div class="col-span-full">
-                <h2 class="section-heading">Featured Stories</h2>
-                <div class="story-cards">
-                    <div class="story-card carousel-item active">
-                        <img src="images/destiny-allen-green.png" alt="Destiny Allen-Green" class="story-image">
-                        <div class="story-person">
-                            <h3>Destiny Allen-Green</h3>
-                            <p>'17 Geology & Geography</p>
+        <section class="grid-con" id="story-stats" aria-labelledby="stats-heading">
+            <h2 id="stats-heading" class="hidden">Story statistics</h2>
+            <div class="col-span-full story-stats-con">
+                <div class="story-stat-groups" id="story-stats-carousel" role="region" aria-labelledby="stats-heading">
+                    <div class=" story-stat-group carousel-item active">
+                        <div class="story-stat">
+                            <strong>1,200+</strong>
+                            <p>Stories Shared</p>
                         </div>
-                        <p class="story-text">"Western exposed me to new experiences that made me adaptable and open to
-                            change. From spelunking in Kentucky for course credit to NSERC research awards, I discovered
-                            not just what I'm good at, but what truly matters to me—the intersection of land,
-                            environmental systems, and communities."</p>
-                        <a href="https://www.ssc.uwo.ca/alumni/alumni-stories/destiny_allen_green.html" target="_blank"
-                            class="button">Read More</a>
                     </div>
-                    <div class="story-card carousel-item">
-                        <img src="images/griffin-jaegar.png" alt="Griffin Jaegar" class="story-image">
-                        <div class="story-person">
-                            <h3>Griffin Jaegar</h3>
-                            <p>'22 Journalism</p>
+                    <div class="divider" aria-hidden="true"></div>
+                    <div class="story-stat-group carousel-item">
+                        <div class="story-stat">
+                            <strong>73</strong>
+                            <p>Countries Reached</p>
                         </div>
-                        <p class="story-text">"I started as a performer, but Western's MMJC program showed me my passion
-                            lies in storytelling from both sides of the camera. The hands-on Production Week experience
-                            prepared me for my role as Associate Producer at CBC's The National, where I get to tell
-                            stories that matter every day."</p>
-                        <a href="https://www.fims.uwo.ca/news/2023/start_your_story_griffin_jaeger.html" target="_blank"
-                            class="button">Read More</a>
                     </div>
-                    <div class="story-card carousel-item">
-                        <img src="images/andrea-benoit.png" alt="Andrea Benoit" class="story-image">
-                        <div class="story-person">
-                            <h3>Andrea Benoit</h3>
-                            <p>'14 Media Studies PhD</p>
+                    <div class="divider" aria-hidden="true"></div>
+                    <div class="story-stat-group carousel-item">
+                        <div class="story-stat">
+                            <strong>15,000+</strong>
+                            <p>Students Inspired</p>
                         </div>
-                        <p class="story-text">"My doctoral research at FIMS became an award-winning book on M·A·C
-                            Cosmetics' groundbreaking AIDS philanthropy. Western gave me the foundation to push
-                            boundaries in my field and tell stories that resonate across disciplines—from business
-                            history to queer studies."</p>
-                        <a href="https://www.fims.uwo.ca/news/2021/andrea_benoit_receives_award_for_best_book_in_canadian_history.html"
-                            target="_blank" class="button">Read More</a>
                     </div>
                 </div>
-                <div class="carousel-controls" data-carousel="story-cards">
-                    <button class="carousel-nav carousel-prev">
-                        <img src="images/scrollbar-arrow-left.svg" alt="Previous" width="24" height="24">
+                <div class="carousel-controls" data-carousel="story-stat-groups">
+                    <button class="carousel-nav carousel-prev" type="button" aria-label="Previous stat"
+                        aria-controls="story-stats-carousel">
+                        <img src="images/scrollbar-arrow-left.svg" alt="" width="24" height="24" aria-hidden="true">
                     </button>
-                    <div class="carousel-pagination">
-                        <button class="carousel-dot active"></button>
-                        <button class="carousel-dot"></button>
-                        <button class="carousel-dot"></button>
+                    <div class="carousel-pagination" role="tablist" aria-label="Story statistics slides">
+                        <button class="carousel-dot active" type="button" role="tab" aria-selected="true"
+                            aria-controls="story-stats-carousel">
+                            <span class="sr-only">Slide 1</span>
+                        </button>
+                        <button class="carousel-dot" type="button" role="tab" aria-selected="false"
+                            aria-controls="story-stats-carousel">
+                            <span class="sr-only">Slide 2</span>
+                        </button>
+                        <button class="carousel-dot" type="button" role="tab" aria-selected="false"
+                            aria-controls="story-stats-carousel">
+                            <span class="sr-only">Slide 3</span>
+                        </button>
                     </div>
-                    <button class="carousel-nav carousel-next">
-                        <img src="images/scrollbar-arrow-right.svg" alt="Next" width="24" height="24">
+                    <button class="carousel-nav carousel-next" type="button" aria-label="Next stat"
+                        aria-controls="story-stats-carousel">
+                        <img src="images/scrollbar-arrow-right.svg" alt="" width="24" height="24" aria-hidden="true">
                     </button>
                 </div>
             </div>
         </section>
-    </div>
 
-    <section class="grid-con" id="about">
-        <div class="col-span-full about-initiative-con">
-            <h2 class="section-heading">About This Initiative</h2>
-            <div class="initiative-cards">
-                <div class="initiative-card">
-                    <img src="images/share-your-story.png" alt="Dr. John Yoo giving opening remarks"
-                        class="initiative-image">
-                    <div class=" initiative-text">
-                        <h3>Share Your Story</h3>
-                        <p>Western University is launching the "Share Your Story" initiative to celebrate the diverse
-                            journeys, achievements, and lived experiences of our alumni community. Your story
-                            matters—and it
-                            has the power to inspire current students and fellow graduates alike.</p>
+        <div class="background-wrapper">
+            <section class="grid-con" id="featured-stories" aria-labelledby="stories-heading">
+                <h2 id="stories-heading" class="section-heading col-span-full">Featured Stories</h2>
+                <div class="col-span-full">
+                    <div class="story-cards" id="featured-stories-carousel" role="region"
+                        aria-labelledby="stories-heading">
+                        <article class=" story-card carousel-item active">
+                            <img src="images/destiny-allen-green.jpg" alt="Destiny Allen-Green" class="story-image">
+                            <div class="story-person">
+                                <h3>Destiny Allen-Green</h3>
+                                <p>'17 Geology & Geography</p>
+                            </div>
+                            <p class="story-text">"Western exposed me to new experiences that made me adaptable and open
+                                to change. From spelunking in Kentucky for course credit to NSERC research awards, I
+                                discovered not just what I'm good at, but what truly matters to me—the intersection of
+                                land, environmental systems, and communities."</p>
+                            <a href="https://www.ssc.uwo.ca/alumni/alumni-stories/destiny_allen_green.html"
+                                target="_blank" rel="noopener noreferrer" class="button">Read More</a>
+                        </article>
+                        <article class="story-card carousel-item">
+                            <img src="images/griffin-jaegar.jpg" alt="Griffin Jaegar" class="story-image">
+                            <div class="story-person">
+                                <h3>Griffin Jaegar</h3>
+                                <p>'22 Journalism</p>
+                            </div>
+                            <p class="story-text">"I started as a performer, but Western's MMJC program showed me my
+                                passion lies in storytelling from both sides of the camera. The hands-on Production Week
+                                experience prepared me for my role as Associate Producer at CBC's The National, where I
+                                get to tell stories that matter every day."</p>
+                            <a href="https://www.fims.uwo.ca/news/2023/start_your_story_griffin_jaeger.html"
+                                target="_blank" rel="noopener noreferrer" class="button">Read More</a>
+                        </article>
+                        <article class="story-card carousel-item">
+                            <img src="images/andrea-benoit.jpg" alt="Andrea Benoit" class="story-image">
+                            <div class="story-person">
+                                <h3>Andrea Benoit</h3>
+                                <p>'14 Media Studies PhD</p>
+                            </div>
+                            <p class="story-text">"My doctoral research at FIMS became an award-winning book on M·A·C
+                                Cosmetics' groundbreaking AIDS philanthropy. Western gave me the foundation to push
+                                boundaries in my field and tell stories that resonate across disciplines—from business
+                                history to queer studies."</p>
+                            <a href="https://www.fims.uwo.ca/news/2021/andrea_benoit_receives_award_for_best_book_in_canadian_history.html"
+                                target="_blank" rel="noopener noreferrer" class="button">Read More</a>
+                        </article>
+                    </div>
+                    <div class="carousel-controls" data-carousel="story-cards">
+                        <button class="carousel-nav carousel-prev" type="button" aria-label="Previous featured story"
+                            aria-controls="featured-stories-carousel">
+                            <img src="images/scrollbar-arrow-left.svg" alt="" width="24" height="24" aria-hidden="true">
+                        </button>
+                        <div class="carousel-pagination" role="tablist" aria-label="Featured stories slides">
+                            <button class="carousel-dot active" type="button" role="tab" aria-selected="true"
+                                aria-controls="featured-stories-carousel">
+                                <span class="sr-only">Story 1</span>
+                            </button>
+                            <button class="carousel-dot" type="button" role="tab" aria-selected="false"
+                                aria-controls="featured-stories-carousel">
+                                <span class="sr-only">Story 2</span>
+                            </button>
+                            <button class="carousel-dot" type="button" role="tab" aria-selected="false"
+                                aria-controls="featured-stories-carousel">
+                                <span class="sr-only">Story 3</span>
+                            </button>
+                        </div>
+                        <button class="carousel-nav carousel-next" type="button" aria-label="Next featured story"
+                            aria-controls="featured-stories-carousel">
+                            <img src="images/scrollbar-arrow-right.svg" alt="" width="24" height="24"
+                                aria-hidden="true">
+                        </button>
                     </div>
                 </div>
-                <div class="initiative-card">
-                    <img src="images/what-to-share.png" alt="Alumni with JW" class="initiative-image">
-                    <div class=" initiative-text">
-                        <h3>What To Share</h3>
-                        <ul>
-                            <li>The mentors who shaped your journey</li>
-                            <li>Challenges you overcame during and after university</li>
-                            <li>Personal milestones and professional accomplishments</li>
-                            <li>How Western contributed to your growth beyond the classroom</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
-        </div>
-    </section>
 
-    <div class="background-wrapper">
-        <section class="grid-con" id="why-share">
-            <div class="col-span-full why-share-con">
-                <h2 class="section-heading">Why Share?</h2>
-                <div class="why-share-items">
-                    <div class="why-share-item-group carousel-item active">
-                        <div class="why-share-item">
-                            <img src="images/inspire.svg" alt="Light Bulb Icon">
-                            <p>Inspire Future Students</p>
+        <section class="grid-con" id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="section-heading col-span-full">About This Initiative</h2>
+            <div class="col-span-full about-initiative-con">
+                <div class="initiative-cards">
+                    <article class="initiative-card">
+                        <img src="images/share-your-story.jpg" alt="Dr. John Yoo giving opening remarks"
+                            class="initiative-image">
+                        <div class="initiative-text">
+                            <h3>Share Your Story</h3>
+                            <p>Western University is launching the "Share Your Story" initiative to celebrate the
+                                diverse journeys, achievements, and lived experiences of our alumni community. Your
+                                story matters—and it has the power to inspire current students and fellow graduates
+                                alike.</p>
                         </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="why-share-item-group carousel-item">
-                        <div class="why-share-item">
-                            <img src="images/reconnect.svg" alt="Person Reconnecting Icon">
-                            <p>Reconnect With Community</p>
+                    </article>
+                    <article class="initiative-card">
+                        <img src="images/what-to-share.jpg" alt="Alumni with JW" class="initiative-image">
+                        <div class="initiative-text">
+                            <h3>What To Share</h3>
+                            <ul>
+                                <li>The mentors who shaped your journey</li>
+                                <li>Challenges you overcame during and after university</li>
+                                <li>Personal milestones and professional accomplishments</li>
+                                <li>How Western contributed to your growth beyond the classroom</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="why-share-item-group carousel-item">
-                        <div class="why-share-item">
-                            <img src="images/legacy.svg" alt="Notepad Icon">
-                            <p>Build Western's Legacy</p>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="why-share-item-group carousel-item">
-                        <div class="why-share-item">
-                            <img src="images/featured.svg" alt="Star Icon">
-                            <p>Get Featured</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-controls" data-carousel="why-share-items">
-                    <button class="carousel-nav carousel-prev">
-                        <img src="images/scrollbar-arrow-left.svg" alt="Previous" width="24" height="24">
-                    </button>
-                    <div class="carousel-pagination">
-                        <button class="carousel-dot active"></button>
-                        <button class="carousel-dot"></button>
-                        <button class="carousel-dot"></button>
-                        <button class="carousel-dot"></button>
-                    </div>
-                    <button class="carousel-nav carousel-next">
-                        <img src="images/scrollbar-arrow-right.svg" alt="Next" width="24" height="24">
-                    </button>
+                    </article>
                 </div>
             </div>
         </section>
-    </div>
 
-    <section class="grid-con" id="share-form">
-        <div class="col-span-full contact-form-con">
-            <h2 class="section-heading">Share Your Story</h2>
-            <form class="contact-form" novalidate>
-                <div class="form-group">
-                    <label for="first-name">First Name*</label>
-                    <input type="text" id="first-name" name="first-name" required>
+        <div class="background-wrapper">
+            <section class="grid-con" id="why-share" aria-labelledby="why-heading">
+                <h2 id="why-heading" class="section-heading col-span-full">Why Share?</h2>
+                <div class="col-span-full why-share-con">
+                    <div class="why-share-items" id="why-share-carousel" role="region" aria-labelledby="why-heading">
+                        <div class="why-share-item-group carousel-item active">
+                            <div class="why-share-item">
+                                <img src="images/inspire.svg" alt="Light Bulb Icon">
+                                <p>Inspire Future Students</p>
+                            </div>
+                        </div>
+                        <div class="divider" aria-hidden="true"></div>
+                        <div class="why-share-item-group carousel-item">
+                            <div class="why-share-item">
+                                <img src="images/reconnect.svg" alt="Person Reconnecting Icon">
+                                <p>Reconnect With Community</p>
+                            </div>
+                        </div>
+                        <div class="divider" aria-hidden="true"></div>
+                        <div class="why-share-item-group carousel-item">
+                            <div class="why-share-item">
+                                <img src="images/legacy.svg" alt="Notepad Icon">
+                                <p>Build Western's Legacy</p>
+                            </div>
+                        </div>
+                        <div class="divider" aria-hidden="true"></div>
+                        <div class="why-share-item-group carousel-item">
+                            <div class="why-share-item">
+                                <img src="images/featured.svg" alt="Star Icon">
+                                <p>Get Featured</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls" data-carousel="why-share-items">
+                        <button class="carousel-nav carousel-prev" type="button" aria-label="Previous reason"
+                            aria-controls="why-share-carousel">
+                            <img src="images/scrollbar-arrow-left.svg" alt="" width="24" height="24" aria-hidden="true">
+                        </button>
+                        <div class="carousel-pagination" role="tablist" aria-label="Why share slides">
+                            <button class="carousel-dot active" type="button" role="tab" aria-selected="true"
+                                aria-controls="why-share-carousel">
+                                <span class="sr-only">Reason 1</span>
+                            </button>
+                            <button class="carousel-dot" type="button" role="tab" aria-selected="false"
+                                aria-controls="why-share-carousel">
+                                <span class="sr-only">Reason 2</span>
+                            </button>
+                            <button class="carousel-dot" type="button" role="tab" aria-selected="false"
+                                aria-controls="why-share-carousel">
+                                <span class="sr-only">Reason 3</span>
+                            </button>
+                            <button class="carousel-dot" type="button" role="tab" aria-selected="false"
+                                aria-controls="why-share-carousel">
+                                <span class="sr-only">Reason 4</span>
+                            </button>
+                        </div>
+                        <button class="carousel-nav carousel-next" type="button" aria-label="Next reason"
+                            aria-controls="why-share-carousel">
+                            <img src="images/scrollbar-arrow-right.svg" alt="" width="24" height="24"
+                                aria-hidden="true">
+                        </button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="last-name">Last Name*</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="your-story">Your Story*</label>
-                    <textarea id="your-story" name="your-story" rows="6" required></textarea>
-                </div>
-                <button type="submit" class="button">Submit</button>
-            </form>
+            </section>
         </div>
-    </section>
 
-    <footer>
+        <section class="grid-con" id="share-form" aria-labelledby="form-heading">
+            <h2 id="form-heading" class="section-heading col-span-full">Share Your Story</h2>
+            <div class="col-span-full contact-form-con">
+                <form class="contact-form" novalidate>
+                    <p id="form-instructions" class="sr-only">Fields marked with an asterisk are required.</p>
+                    <div class="form-group">
+                        <label for="first-name">First Name*</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name*</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="your-story">Your Story*</label>
+                        <textarea id="your-story" name="your-story" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="hidden">Footer</h2>
         <div class="footer-top">
             <div class="grid-con">
                 <div class="col-span-full footer-contact">
@@ -330,14 +387,17 @@
                             <a href="https://alumni.westernu.ca/contact/">Contact Us</a>
                         </div>
                         <div class="social-links">
-                            <a href="https://www.facebook.com/WesternAlumni/" target="_blank" aria-label="Facebook">
-                                <img src="images/facebook.svg" alt="Facebook" width="40" height="40">
+                            <a href="https://www.facebook.com/WesternAlumni/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook">
+                                <img src="images/facebook.svg" alt="" width="40" height="40">
                             </a>
-                            <a href="https://twitter.com/westernuAlumni" target="_blank" aria-label="Twitter">
-                                <img src="images/twitter.svg" alt="X (formerly Twitter)" width="40" height="40">
+                            <a href="https://twitter.com/westernuAlumni" target="_blank" rel="noopener noreferrer"
+                                aria-label="Twitter">
+                                <img src="images/twitter.svg" alt="" width="40" height="40">
                             </a>
-                            <a href="https://www.instagram.com/westernualumni/" target="_blank" aria-label="Instagram">
-                                <img src="images/instagram.svg" alt="Instagram" width="40" height="40">
+                            <a href="https://www.instagram.com/westernualumni/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Instagram">
+                                <img src="images/instagram.svg" alt="" width="40" height="40">
                             </a>
                         </div>
                     </div>
@@ -349,22 +409,25 @@
             <div class="grid-con">
                 <div class="col-span-full footer-links">
                     <nav class="link-column" aria-label="Alumni Services">
-                        <button class="footer-toggle">
+                        <div class="footer-toggle" role="button" tabindex="0" aria-expanded="false">
                             <h3>Alumni Services</h3>
-                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24">
-                        </button>
+                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24"
+                                aria-hidden="true">
+                        </div>
                         <ul>
-                            <li><a href="https://westernu.alumni-perks.com/" target="_blank">Purple Perks App</a></li>
+                            <li><a href="https://westernu.alumni-perks.com/" target="_blank"
+                                    rel="noopener noreferrer">Purple Perks App</a></li>
                             <li><a href="https://alumni.westernu.ca/form/alumni-card-request-form/">Alumni Card</a></li>
                             <li><a href="https://alumni.westernu.ca/perks-benefits/email-for-life/">Email for Life</a>
                             </li>
                         </ul>
                     </nav>
                     <nav class="link-column" aria-label="Campus">
-                        <button class="footer-toggle">
+                        <div class="footer-toggle" role="button" tabindex="0" aria-expanded="false">
                             <h3>Campus</h3>
-                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24">
-                        </button>
+                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24"
+                                aria-hidden="true">
+                        </div>
                         <ul>
                             <li><a href="https://www.uwo.ca/about/visit/maps.html">Maps</a></li>
                             <li><a href="https://www.uwo.ca/about/visit/buildings.html">Building Directory</a></li>
@@ -372,10 +435,11 @@
                         </ul>
                     </nav>
                     <nav class="link-column" aria-label="Community">
-                        <button class="footer-toggle">
+                        <div class="footer-toggle" role="button" tabindex="0" aria-expanded="false">
                             <h3>Community</h3>
-                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24">
-                        </button>
+                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24"
+                                aria-hidden="true">
+                        </div>
                         <ul>
                             <li><a href="https://alumni.westernu.ca/community/class-notes/">Class Notes</a></li>
                             <li><a href="https://alumni.westernu.ca/community/alumni-news/">News</a></li>
@@ -404,11 +468,11 @@
                     <p class="copyright">&copy; 1878 - 2025 Western University</p>
                     <div class="legal-links">
                         <a href="https://www.uwo.ca/vpfinance/legalcounsel/privacy/">Privacy</a>
-                        <span>•</span>
+                        <span aria-hidden="true">•</span>
                         <a href="https://www.communications.uwo.ca/web_design/standards/index.html">Web Standards</a>
-                        <span>•</span>
+                        <span aria-hidden="true">•</span>
                         <a href="https://www.uwo.ca/terms-of-use.html">Terms of Use</a>
-                        <span>•</span>
+                        <span aria-hidden="true">•</span>
                         <a href="https://accessibility.uwo.ca/">Accessibility</a>
                     </div>
                 </div>
