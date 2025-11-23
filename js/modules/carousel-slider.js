@@ -1,4 +1,4 @@
-export function carousel(containerSelector) {
+export function carouselSlider(containerSelector) {
     //VARIABLES
     const container = document.querySelector(containerSelector);
     const controls = document.querySelector(
