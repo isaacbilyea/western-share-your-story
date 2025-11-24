@@ -1,5 +1,11 @@
 @use '../abstracts' as a;
 
+#header-con {
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;
+}
+
 .mobile-menu-overlay {
     position: fixed;
     top: 0;
@@ -64,14 +70,26 @@
             text-decoration: none;
         }
 
+
         .all-in {
             height: 1.25rem;
+            display: inline-block;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: auto;
+                display: block;
+                max-width: none;
+            }
         }
     }
 
     .mobile-main-nav {
         padding: 2rem 1.5rem;
         border-top: 3px solid a.$primary-color;
+        height: 100%;
+        overflow-y: scroll;
 
         ul {
             display: flex;
@@ -186,14 +204,15 @@
 .top-menu {
     display: flex;
     max-width: 1200px;
-    margin: 1rem;
-    margin-bottom: 0;
-    padding-bottom: 1rem;
+    margin: 0 1rem;
+    padding: 1rem 0;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #dedede;
+
     .all-in {
         display: none;
+        
     }
 
     .burger-menu {
@@ -252,6 +271,7 @@
     padding-bottom: 1rem;
     align-items: center;
     justify-content: space-between;
+    
 
     .alumni-link {
         color: #6f7273;
@@ -262,6 +282,15 @@
 
     .all-in {
         height: 1.25rem;
+        display: inline-block;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: auto;
+            display: block;
+            max-width: none;
+        }
     }
 
     nav {
@@ -322,10 +351,16 @@
         }
 
         .all-in {
-            display: block;
-            margin-left: auto;
             height: 2.5rem;
-            cursor: pointer;
+            display: inline-block;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: auto;
+                display: block;
+                max-width: none;
+            }
         }
 
         > div {

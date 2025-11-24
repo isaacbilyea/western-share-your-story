@@ -20,10 +20,12 @@ export function mobileMenu() {
         html.style.overflow = '';
     }
 
-    function handleLinkClick() {
+    function closeMenuInstant() {
+        mobileMenuOverlay.style.transition = 'none';
+        closeMenu();
         setTimeout(() => {
-            closeMenu();
-        }, 100);
+            mobileMenuOverlay.style.transition = '';
+        }, 50);
     }
 
     function handleResize() {
@@ -38,6 +40,10 @@ export function mobileMenu() {
     window.addEventListener('resize', handleResize);
 
     mobileMenuLinks.forEach((link) => {
-        link.addEventListener('click', handleLinkClick);
+        if (link.target === '_blank') {
+            link.addEventListener('click', closeMenuInstant);
+        } else {
+            link.addEventListener('click', closeMenu);
+        }
     });
 }
