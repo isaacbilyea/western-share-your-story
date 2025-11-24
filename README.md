@@ -26,3 +26,4 @@ A responsive, accessible landing page created for the Western University Web Dev
 —or—  
 
 Clone the repository and open `index.html` in your browser.
+
