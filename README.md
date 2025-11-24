@@ -11,7 +11,7 @@ A responsive, accessible landing page created for the Western University Web Dev
 - Accessible form with labels for First Name, Last Name, and Story
 - Semantic structure (header, main, nav, section, footer)
 - Keyboard-friendly navigation and visible focus states
-- High-contrast, WCAG-compliant color usage
+- High-contrast, WCAG-compliant colour usage
 
 ## Technologies
 
@@ -22,5 +22,7 @@ A responsive, accessible landing page created for the Western University Web Dev
 ## View the Project
 
 **Live Demo:** [https://western.isaacbilyea.com/](https://western.isaacbilyea.com/)
+
 —or—  
+
 Clone the repository and open `index.html` in your browser.
