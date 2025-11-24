@@ -8,11 +8,11 @@
     <meta name="theme-color" content="#561b8d" media="(prefers-color-scheme: dark)">
     <link href="images/apple-icon.png" rel="apple-touch-icon">
     <link href="images/favicon.ico" rel="shortcut icon">
-    <link href="css/main.css?=v11232025" rel="stylesheet">
+    <link href="css/main.css?=v11242025" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
-    <script type="module" src="js/landing.js?=v11232025"></script>
+    <script type="module" src="js/landing.js?=v11242025"></script>
     <title>Share Your Story - Western University</title>
 </head>
 
@@ -23,13 +23,14 @@
                 <img src="images/logo.svg" alt="Western University Logo" class="logo">
             </a>
             <button class="close-menu" type="button" aria-label="Close menu">
-                <img src="images/close.svg" alt="" width="24" height="24">
+                <img src="images/close.svg" alt="Close button" width="24" height="24">
             </button>
         </div>
 
         <div class="mobile-menu-bottom">
             <a href="https://alumni.westernu.ca/" class="alumni-link">Alumni</a>
-            <img src="images/western-all-in.png" alt="Western University All In" class="all-in" aria-hidden="true">
+            <a href="https://allin.westernu.ca/?utm_medium=referral&utm_source=alumni.uwo.ca&utm_campaign=Campaign&utm_content=link&utm_term=general"
+                target="_blank" class="all-in"><img src="images/western-all-in.png" alt="Western University All In"></a>
         </div>
 
         <nav class="mobile-main-nav" aria-label="Mobile site navigation">
@@ -93,11 +94,13 @@
                 <span></span>
                 <span></span>
             </button>
-            <img src="images/western-all-in.png" alt="Western University All In" class="all-in" aria-hidden="true">
+            <a href="https://allin.westernu.ca/?utm_medium=referral&utm_source=alumni.uwo.ca&utm_campaign=Campaign&utm_content=link&utm_term=general"
+                target="_blank" class="all-in"><img src="images/western-all-in.png" alt="Western University All In"></a>
         </div>
         <div class="bottom-menu col-span-full">
             <a href="https://alumni.westernu.ca/" class="alumni-link">Alumni</a>
-            <img src="images/western-all-in.png" alt="Western University All In" class="all-in" aria-hidden="true">
+            <a href="https://allin.westernu.ca/?utm_medium=referral&utm_source=alumni.uwo.ca&utm_campaign=Campaign&utm_content=link&utm_term=general"
+                target="_blank" class="all-in"><img src="images/western-all-in.png" alt="Western University All In"></a>
             <nav aria-label="Primary site navigation">
                 <ul class="menu-nav-links">
                     <li><a href="#featured-stories">FEATURED STORIES</a></li>
@@ -152,7 +155,8 @@
                 <div class="carousel-controls" data-carousel="story-stat-groups">
                     <button class="carousel-nav carousel-prev" type="button" aria-label="Previous stat"
                         aria-controls="story-stats-carousel">
-                        <img src="images/scrollbar-arrow-left.svg" alt="" width="24" height="24" aria-hidden="true">
+                        <img src="images/scrollbar-arrow-left.svg" alt="left arrow" width="24" height="24"
+                            aria-hidden="true">
                     </button>
                     <div class="carousel-pagination" role="tablist" aria-label="Story statistics slides">
                         <button class="carousel-dot active" type="button" role="tab" aria-selected="true"
@@ -170,7 +174,8 @@
                     </div>
                     <button class="carousel-nav carousel-next" type="button" aria-label="Next stat"
                         aria-controls="story-stats-carousel">
-                        <img src="images/scrollbar-arrow-right.svg" alt="" width="24" height="24" aria-hidden="true">
+                        <img src="images/scrollbar-arrow-right.svg" alt="right arrow" width="24" height="24"
+                            aria-hidden="true">
                     </button>
                 </div>
             </div>
@@ -182,7 +187,7 @@
                 <div class="col-span-full">
                     <div class="story-cards" id="featured-stories-carousel" role="region"
                         aria-labelledby="stories-heading">
-                        <article class=" story-card carousel-item active">
+                        <div class=" story-card carousel-item active">
                             <img src="images/destiny-allen-green.jpg" alt="Destiny Allen-Green" class="story-image">
                             <div class="story-person">
                                 <h3>Destiny Allen-Green</h3>
@@ -194,8 +199,8 @@
                                 land, environmental systems, and communities."</p>
                             <a href="https://www.ssc.uwo.ca/alumni/alumni-stories/destiny_allen_green.html"
                                 target="_blank" rel="noopener noreferrer" class="button">Read More</a>
-                        </article>
-                        <article class="story-card carousel-item">
+                        </div>
+                        <div class="story-card carousel-item">
                             <img src="images/griffin-jaegar.jpg" alt="Griffin Jaegar" class="story-image">
                             <div class="story-person">
                                 <h3>Griffin Jaegar</h3>
@@ -207,8 +212,8 @@
                                 get to tell stories that matter every day."</p>
                             <a href="https://www.fims.uwo.ca/news/2023/start_your_story_griffin_jaeger.html"
                                 target="_blank" rel="noopener noreferrer" class="button">Read More</a>
-                        </article>
-                        <article class="story-card carousel-item">
+                        </div>
+                        <div class="story-card carousel-item">
                             <img src="images/andrea-benoit.jpg" alt="Andrea Benoit" class="story-image">
                             <div class="story-person">
                                 <h3>Andrea Benoit</h3>
@@ -220,12 +225,13 @@
                                 history to queer studies."</p>
                             <a href="https://www.fims.uwo.ca/news/2021/andrea_benoit_receives_award_for_best_book_in_canadian_history.html"
                                 target="_blank" rel="noopener noreferrer" class="button">Read More</a>
-                        </article>
+                        </div>
                     </div>
                     <div class="carousel-controls" data-carousel="story-cards">
                         <button class="carousel-nav carousel-prev" type="button" aria-label="Previous featured story"
                             aria-controls="featured-stories-carousel">
-                            <img src="images/scrollbar-arrow-left.svg" alt="" width="24" height="24" aria-hidden="true">
+                            <img src="images/scrollbar-arrow-left.svg" alt="left arrow" width="24" height="24"
+                                aria-hidden="true">
                         </button>
                         <div class="carousel-pagination" role="tablist" aria-label="Featured stories slides">
                             <button class="carousel-dot active" type="button" role="tab" aria-selected="true"
@@ -243,7 +249,7 @@
                         </div>
                         <button class="carousel-nav carousel-next" type="button" aria-label="Next featured story"
                             aria-controls="featured-stories-carousel">
-                            <img src="images/scrollbar-arrow-right.svg" alt="" width="24" height="24"
+                            <img src="images/scrollbar-arrow-right.svg" alt="right arrow" width="24" height="24"
                                 aria-hidden="true">
                         </button>
                     </div>
@@ -255,7 +261,7 @@
             <h2 id="about-heading" class="section-heading col-span-full">About This Initiative</h2>
             <div class="col-span-full about-initiative-con">
                 <div class="initiative-cards">
-                    <article class="initiative-card">
+                    <div class="initiative-card">
                         <img src="images/share-your-story.jpg" alt="Dr. John Yoo giving opening remarks"
                             class="initiative-image">
                         <div class="initiative-text">
@@ -265,8 +271,8 @@
                                 story matters—and it has the power to inspire current students and fellow graduates
                                 alike.</p>
                         </div>
-                    </article>
-                    <article class="initiative-card">
+                    </div>
+                    <div class="initiative-card">
                         <img src="images/what-to-share.jpg" alt="Alumni with JW" class="initiative-image">
                         <div class="initiative-text">
                             <h3>What To Share</h3>
@@ -277,7 +283,7 @@
                                 <li>How Western contributed to your growth beyond the classroom</li>
                             </ul>
                         </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -318,7 +324,8 @@
                     <div class="carousel-controls" data-carousel="why-share-items">
                         <button class="carousel-nav carousel-prev" type="button" aria-label="Previous reason"
                             aria-controls="why-share-carousel">
-                            <img src="images/scrollbar-arrow-left.svg" alt="" width="24" height="24" aria-hidden="true">
+                            <img src="images/scrollbar-arrow-left.svg" alt="left arrow" width="24" height="24"
+                                aria-hidden="true">
                         </button>
                         <div class="carousel-pagination" role="tablist" aria-label="Why share slides">
                             <button class="carousel-dot active" type="button" role="tab" aria-selected="true"
@@ -340,7 +347,7 @@
                         </div>
                         <button class="carousel-nav carousel-next" type="button" aria-label="Next reason"
                             aria-controls="why-share-carousel">
-                            <img src="images/scrollbar-arrow-right.svg" alt="" width="24" height="24"
+                            <img src="images/scrollbar-arrow-right.svg" alt="right arrow" width="24" height="24"
                                 aria-hidden="true">
                         </button>
                     </div>
@@ -389,15 +396,15 @@
                         <div class="social-links">
                             <a href="https://www.facebook.com/WesternAlumni/" target="_blank" rel="noopener noreferrer"
                                 aria-label="Facebook">
-                                <img src="images/facebook.svg" alt="" width="40" height="40">
+                                <img src="images/facebook.svg" alt="facebook icon" width="40" height="40">
                             </a>
                             <a href="https://twitter.com/westernuAlumni" target="_blank" rel="noopener noreferrer"
                                 aria-label="Twitter">
-                                <img src="images/twitter.svg" alt="" width="40" height="40">
+                                <img src="images/twitter.svg" alt="twitter icon" width="40" height="40">
                             </a>
                             <a href="https://www.instagram.com/westernualumni/" target="_blank"
                                 rel="noopener noreferrer" aria-label="Instagram">
-                                <img src="images/instagram.svg" alt="" width="40" height="40">
+                                <img src="images/instagram.svg" alt="instagram icon" width="40" height="40">
                             </a>
                         </div>
                     </div>
@@ -411,7 +418,7 @@
                     <nav class="link-column" aria-label="Alumni Services">
                         <div class="footer-toggle" role="button" tabindex="0" aria-expanded="false">
                             <h3>Alumni Services</h3>
-                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24"
+                            <img src="images/chevron.svg" alt="down arrow" class="chevron" width="24" height="24"
                                 aria-hidden="true">
                         </div>
                         <ul>
@@ -425,7 +432,7 @@
                     <nav class="link-column" aria-label="Campus">
                         <div class="footer-toggle" role="button" tabindex="0" aria-expanded="false">
                             <h3>Campus</h3>
-                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24"
+                            <img src="images/chevron.svg" alt="down arrow" class="chevron" width="24" height="24"
                                 aria-hidden="true">
                         </div>
                         <ul>
@@ -437,7 +444,7 @@
                     <nav class="link-column" aria-label="Community">
                         <div class="footer-toggle" role="button" tabindex="0" aria-expanded="false">
                             <h3>Community</h3>
-                            <img src="images/chevron.svg" alt="" class="chevron" width="24" height="24"
+                            <img src="images/chevron.svg" alt="down arrow" class="chevron" width="24" height="24"
                                 aria-hidden="true">
                         </div>
                         <ul>

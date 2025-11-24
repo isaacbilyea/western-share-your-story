@@ -104,10 +104,10 @@
     .story-cards {
         display: flex;
         justify-content: space-between;
-        gap: 3rem;
+        gap: 1rem;
 
         .story-card {
-            width: calc(33.333% - 2rem);
+            width: calc(33.333% - 1rem);
 
             .story-image {
                 max-height: 22rem;
