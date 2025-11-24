@@ -5,10 +5,10 @@
 }
 
 .story-cards {
-    margin-top: 3rem;
     display: flex;
     flex-wrap: nowrap;
     transition: transform 0.4s ease;
+    margin-top: 2rem;
 
     .story-card {
         flex: 0 0 100%;
